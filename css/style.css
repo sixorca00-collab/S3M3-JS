@@ -4,32 +4,87 @@
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+/* HEADER */
 header{
     width: 100%;
-    display: flex;
-    flex-direction: row;
     height: 4rem;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #9f9f9fd0;
-    padding: 10px;
+    padding: 0 20px;
 }
-.btn-crear{
-    background-color: #6fd845f7;
-    width: 4rem;
-    margin-right: 3rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 2rem;    
-}
+
 .tittle{
     color: aliceblue;
 }
+
+.btn-crear{
+    background-color: #6fd845f7;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* FORMULARIO */
 .Form{
-    margin: 0 auto;
+    margin: 40px auto;
     width: 50%;
-    height: 10rem;
+    max-width: 400px;
+}
+
+.Form form{
+    border: 1px solid #111;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
-    padding: 20px;
+    gap: 10px;
+}
+
+.Form h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Form label{
+    font-size: 0.9rem;
+}
+
+.Form input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.Form input:focus{
+    border-color: #6fd845f7;
+}
+
+/* BOTÓN GUARDAR */
+.Form button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #6fd845f7;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.Form button:hover{
+    background-color: #5bc53a;
+}
+
+/* LISTA DE NOTAS (por ahora vacío) */
+.page{
+    width: 50%;
+    margin: auto;
 }

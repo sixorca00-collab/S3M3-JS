@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    justify-content: space-between;
+    background-color: #9f9f9fd0;
+    padding: 10px;
+}
+.btn-crear{
+    background-color: #6fd845f7;
+    width: 4rem;
+    margin-right: 3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2rem;    
+}
+.tittle{
+    color: aliceblue;
+}
+.Form{
+    margin: 0 auto;
+    width: 50%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 20px;
+}

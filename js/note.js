@@ -29,7 +29,7 @@ function mostrarNotas(){
     
     //Agregamos la funcionalidad al boton
     btnEliminar.addEventListener('click', () =>{
-      eliminarNota(index);
+      eliminarNota(index, li);
     });
     li.appendChild(btnEliminar);
     listaNotas.appendChild(li);
@@ -56,9 +56,9 @@ btnSave.addEventListener('click', (e) => {
   mostrarNotas()
 });
 //Funcion de eliminar notas.
-function eliminarNota(index){
+function eliminarNota(index, li){
   //Eliminamos en el DOM
-  listaNotas.removeChild(li);
+  listaNotas.removeChild(li); 
 //Eliminamos en el Array para evitar traerla de vuelta
   invNotas.splice(index, 1);
   //Actualizamos localStorage
